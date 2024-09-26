@@ -45,7 +45,7 @@ def send_messages(client):
 # Connect to the server and start the client
 def start():
     client = client_connect()
-    
+
     # Start two threads: one for receiving and one for sending messages
     receive_thread = threading.Thread(target=receive_messages, args=(client,))
     receive_thread.start()
