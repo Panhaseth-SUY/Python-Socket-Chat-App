@@ -13,5 +13,6 @@ def start():
     receive_thread = threading.Thread(target=receive_messages, args=(client,))
     receive_thread.start()
 
+
 if __name__ == "__main__":
     start()
