@@ -29,6 +29,7 @@ def broadcast(message, conn):
                 except:
                     clients.remove(client)
 
+
 # Handle individual client connection
 def handle_client(conn, addr):
     print(f"[NEW CONNECTION] {addr} Connected")
